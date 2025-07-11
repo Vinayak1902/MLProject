@@ -1,1 +1,19 @@
-<h1>Welcome to the home page</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>Home - Student Exam Predictor</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet"/>
+</head>
+<body>
+    <div class="d-flex align-items-center justify-content-center vh-100 text-center">
+        <div>
+            <h1 class="display-4 mb-4">Welcome to Exam Performance Predictor</h1>
+            <p class="lead mb-4">Predict student's math performance based on their details.</p>
+            <a href="{{ url_for('predict_datapoint') }}" class="btn btn-primary btn-lg">Start Prediction</a>
+        </div>
+    </div>
+</body>
+</html>
